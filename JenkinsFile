@@ -2,10 +2,12 @@ pipeline {
 	agent any
 	stages {
 		stage('build') {
-			sh """ 
-				cd "C:/ProgramData/Jenkins/.jenkins/workspace/lightweight checkout/JOB_FALSE_LightweightCheckout"
-				python -m compileall saikuroid.py
-			"""
+			steps {
+				sh """ 
+					cd "C:/ProgramData/Jenkins/.jenkins/workspace/lightweight checkout/JOB_FALSE_LightweightCheckout"
+					python -m compileall saikuroid.py
+				"""
+				}
 		}
 	}
 }
