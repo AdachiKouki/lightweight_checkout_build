@@ -1,1 +1,2 @@
+cd C:\ProgramData\Jenkins\.jenkins\workspace\lightweight checkout\JOB_FALSE_LightweightCheckout
 python -m compileall saikuroid.py
